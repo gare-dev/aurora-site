@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&display=swap');
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+
+}
+
+header {
+
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background: rgb(107, 4, 225);
+    background: linear-gradient(to left, #0B26E0, #7C2AE8);
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#register_box {
+
+    width: 320px;
+    height: 548px;
+    background: rgb(107, 4, 225);
+    background: linear-gradient(90deg, rgba(107, 4, 225, 1) 24%, rgba(11, 38, 224, 1) 85%);
+    border-radius: 5px;
+}
+
+#register_title {
+
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+#register_message {
+    text-align: center;
+    color: #C8C0C0;
+    font-family: "League Spartan", sans-serif;
+    padding-top: 20px;
+    font-size: 20px;
+
+}
+
+#register_flex {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 45px;
+    align-items: center;
+}
+
+.register_input_display {
+    position: relative;
+
+}
+
+.register_input {
+    width: 220px;
+    height: 40px;
+    outline: none;
+    border-radius: 3px;
+    border: 0;
+}
+
+.register_input:focus~.register_label {
+    top: -23px;
+    font-size: 15px;
+    color: white;
+    left: 0px;
+    opacity: 1;
+}
+
+
+.register_input:valid ~.register_label {
+    top: -23px;
+    font-size: 15px;
+    color: rgb(37, 209, 37);
+    left: 0px;
+    opacity: 1;
+
+}
+
+
+.register_label {
+    font-family: "Archivo", sans-serif;
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    pointer-events: none;
+    transition: .5s;
+    opacity: .50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
